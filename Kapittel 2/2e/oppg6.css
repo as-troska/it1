@@ -1,0 +1,35 @@
+#meisterboks {
+    display: flex;
+    height: 95vh; /* Eg valde 95vh i staden for 1000 for å få alt inn på ein skjerm, uten å måtte scrolle */
+    flex-direction: column;
+}
+
+#en {
+    flex-grow: 1;
+    background-color: ivory;
+    margin: 10px;
+}
+
+#to {
+    flex-grow: 1;
+    background-color: lavender;
+    margin: 10px;
+}
+
+#tre {
+    flex-grow: 1;
+    background-color: lightcyan;
+    margin: 10px;
+}
+
+#fire {
+    flex-grow: 1;
+    background-color: lightpink;
+    margin: 10px;
+}
+
+#fem {
+    flex-grow: 1;
+    background-color: linen;
+    margin: 10px;
+}

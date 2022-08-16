@@ -1,0 +1,25 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif; 
+  }
+  #hoved {
+    width: 60%;                  
+    margin: 50px auto; /* auto midstiller posisjonen. Med "relative" og "absoulte"-posisjon, blir dette altså utgangspunktet en forskyver fra */          
+    padding: 40px;	             
+    background-color: white; 	 
+    border: 1px solid #cccccc; 
+    position: absolute;
+    left: 100px;
+    top: 100px; 
+    bottom: 100px; /*Disse to linjene slår ikke inn, siden elementet ikke er stort nok, eller fordi det er for mye luft */
+    right: 100px; 
+  }
+  #posisjonert {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    position: sticky;
+    top: 20px;
+    background-color: #B13E20;
+  }
+  

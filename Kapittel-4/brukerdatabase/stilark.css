@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #0D5C63;
+    color: #FFFFFA;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    height: 5vh;
+}
+
+#brukerBilde {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    
+}
+
+#topp {
+    background-color: #FFFFFA;
+    font-family: 'Roboto', sans-serif;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    
+    height: 45vh;
+
+}
+
+#neste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: #78CDD7;
+    
+}
+
+#forrige {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    background-color: #78CDD7;
+}
+
+#bunn {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    overflow-y: scroll;
+    background-color: #44A1A0;
+    
+}
+
+#brukerinfo {
+    height: 300px;
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    
+}
+
+th {
+    border: 1px solid black;
+    color: #FFFFFA;
+    background-color: #0D5C63;
+    font-size: 1.2em;
+    position: sticky;
+    top: initial;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+tr:hover {
+    background-color: #0D5C63;
+    color: #FFFFFA;
+}
+
+tr:nth-child(even) {
+    background-color: #247B7B;
+}
+
+tr:nth-child(even):hover {
+    background-color: #0D5C63;
+    color: #FFFFFA;
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}

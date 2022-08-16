@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brukerdatabase</title>
+    <link rel="stylesheet" href="stilark.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="folk.js"></script>
+</head>
+
+<body>
+    <!-- Palett: https://coolors.co/fffffa-0d5c63-44a1a0-78cdd7-247b7b-->
+
+    <header>Brukerdatabase</header>
+
+
+    <!-- En skisse til siden ser dere her: https://www.figma.com/file/8iTFlE6mG22Dgv4EzJ592i/Brukerdatabase?node-id=0%3A1 Merk at dere velger farger helt selv.-->
+
+    <div id="topp">
+
+        <div id="forrige"><div><</div></div>
+
+
+        <img id="brukerBilde" src="placeholder.png">
+
+        <fieldset id="brukerinfo">
+            <legend>Brukerinfo</legend>
+
+            Fornavn: <span id="fnavn"></span><br>
+            Etternavn: <span id="enavn"></span><br>
+            Fødselsdato: <span id="fd"></span><br>
+            Brukernavn: <span id="brukernavn"></span><br>
+            Brukerid: <span id="brukerid"></span><br>
+            Adresse: <span id="adresse"></span>
+
+        </fieldset>
+
+        <div id="neste"><div>></div></div>
+        <!-- Her skal brukerinfo skrives ut når en trykker på noen i tabellen. Hint. Du kan bruke folk[0].id.value for å finne en gitt person, men da bør du har pjåtet det inn i datasett når du generer tabellen-->
+    </div>
+
+    <div id="bunn">
+        <!-- Her skal en tabell med informasjon om brukerene i folk skrives ut. Ha f.eks med: Fullt navn, adresse, fødselsdato, epost og telefon -->
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

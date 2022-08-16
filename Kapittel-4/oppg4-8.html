@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+
+<head>
+
+
+    <title>DOM</title>
+
+
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Georgia, serif;
+        }
+
+        #hoved {
+            width: 60%;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: white;
+            border: 1px solid #cccccc;
+        }
+
+        h1,
+        h2 {
+            font-family: Arial, sans-serif;
+        }
+
+        .blaa {
+            padding: 20px;
+            background-color: #01739F;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="hoved">
+        <h1>Velkommen til siden min</h1>
+        <p>På denne siden kan du lære mer om meg.</p>
+        <p class="blaa">Min favorittfarge er blå.</p>
+
+        <ul>
+            <li>Et punkt</li>
+            <li>Et punkt til</li>
+        </ul>
+    </div>
+
+
+    <script>
+        let overskrift = document.querySelector("h1");
+        let stil  = document.querySelector("style");
+        let kropp = document.querySelector("body");
+        let titel = document.querySelector("title");
+        let listepunktEl = document.querySelectorAll("li");
+        let avsnitt = document.querySelector("p");
+
+        kropp.style.backgroundColor = "yellow";
+        avsnitt.innerHTML += "<br> Et eller annet";
+        avsnitt.innerHTML += '<p id="endaEtAvsnitt">Enda et avsnitt<p>'
+
+    </script>
+
+
+
+
+</body>
+
+</html>

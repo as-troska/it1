@@ -1,0 +1,64 @@
+#en-en {
+    background-color: white;
+    height: 1px;
+    width: 7px;
+    top: 0;
+    left: 0;
+    min-height: 1px;
+    min-width: 7px;
+    position: absolute;
+    display: inline-block;
+}
+
+#en-to {
+    background-color: black;
+    height: 1px;
+    width: 6px;
+    top: 0;
+    left: 7px;
+    position: absolute;
+    min-height: 1px;
+    min-width: 6px;
+    display: inline-block;
+}
+
+#en-tre {
+    background-color: white;
+    height: 1px;
+    width: 9px;
+    top: 0;
+    left: 13px;
+
+    position: absolute;
+    display: inline-block;
+}
+
+#to-en {
+    background-color: white;
+    display: inline-block;
+    height: 1px;
+    width: 5px;
+    top: 1px;
+    left: 0px;
+    position: absolute;
+}
+
+#to-to {
+    background-color: black;
+    display: inline-block;
+    height: 1px;
+    width: 2px;
+    top: 1px;
+    left: 6px;
+    position: absolute;
+}
+
+#to-tre {
+    background-color: green;
+    display: inline-block;
+    height: 1px;
+    width: 6px;
+    top: 1px;
+    left: 8px;
+    position: absolute;
+}

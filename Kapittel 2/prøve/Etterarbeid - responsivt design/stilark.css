@@ -1,0 +1,236 @@
+body {
+    background-image: url("bilete/krohg_bakgrunn.jpg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #93867F;
+    padding: 0px;
+    color: #343633;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+header h1 {
+    padding: 10px;
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(52, 54, 51, 0.9);
+    padding-left: 0;
+}
+
+nav ul li{
+    flex-grow: 1;
+    display: block;
+    text-decoration: none;
+    min-width: 275px;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(52, 54, 51, 0.9);
+    color: #5CC8FF;
+    text-decoration: none;
+    padding-top: 10px;
+
+}
+
+nav ul li a:hover {
+    display: block;
+    height: 100%;
+    margin: 0;
+    background-color: #93867F;
+    color: #343633;
+    text-decoration: none;
+    padding-top: 10px;
+    
+
+}
+
+
+
+
+
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin: 40px;
+}
+
+article > p{
+    background-color: rgba(52, 54, 51, 0.9);
+    border-radius: 10px;
+    color: #93867F;
+    padding: 10px;
+    font-size: 1.3em;
+    margin: 0px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #93867F;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.4em;
+
+
+}
+
+section h2 {
+    width: calc(100% -100);
+    height: 70px;
+    background-color: #93867F;
+    padding: 20px;
+    padding-bottom: 0px;
+    color: #343633;
+    font-size: 2em;
+    text-align: center;
+}
+
+section ul {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 100px;
+   
+    gap: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+section li {
+    display: flex;    
+    height: 300px;
+    align-items: end;
+    flex-wrap: wrap;
+    
+}
+
+section li span {
+    background-color: rgba(52, 54, 51, 0.9);
+    display: block;
+    width: 100%;   
+    color: #93867F;
+    padding: 10px;
+    font-size: 1.3em; 
+
+}
+
+#portrett {
+    background-image: url("bilete/portrett.jpg");
+    border-radius: 10px;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    grid-row: 1 / span 2;
+    background-position: center;
+}
+
+#bok1923 {
+    background-image: url("bilete/1923.jpg");
+    background-size: cover;
+}
+
+#bok1927 {
+    background-image: url("bilete/1927.jpg");
+    background-size: cover;
+}
+
+#bok1928 {
+    background-image: url("bilete/1928.jpg");
+    background-size: cover;
+}
+
+#bok1931 {
+    background-image: url("bilete/1931.jpg");
+    background-size: cover;
+}
+
+#bok1933 {
+    background-image: url("bilete/1933.jpg");
+    background-size: cover;
+}
+
+#bok1936 {
+    background-image: url("bilete/1936.jpg");
+    background-size: cover;
+}
+
+#bok1945 {
+    background-image: url("bilete/1945.jpg");
+    background-size: cover;
+}
+
+#bok1946 {
+    background-image: url("bilete/1946.jpg");
+    background-size: cover;
+}
+
+#bok1949 {
+    background-image: url("bilete/1949.jpg");
+    background-size: cover;
+}
+
+#bok1950 {
+    background-image: url("bilete/1950.jpg");
+    background-size: cover;
+}
+
+#bok1958 {
+    background-image: url("bilete/1958.jpg");
+    background-size: cover;
+}
+
+#bok1960 {
+    background-image: url("bilete/1960.jpg");
+    background-size: cover;
+}
+
+#bok1961 {
+    background-image: url("bilete/1961.jpg");
+    background-size: cover;
+}
+
+#bok1963 {
+    background-image: url("bilete/1963.jpg");
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        position: relative;
+        
+    }
+
+    footer {
+        position: relative;
+    }
+  }

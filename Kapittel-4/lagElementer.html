@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lag HTML-elementer</title>
+
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        .gul {
+            background-color: yellow;
+            color: black;
+        }
+
+        .svart {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //Oppgave 22: Bruk metodene createElement() og appendChild() for å lage en liste med fire listepunkter. Listepunktene skal bruke de to CSS-klassene du laget i forrige oppgave, slik at oddetallspunktene har den ene fargen, mens partallspunktene har den andre.
+
+        let liste = document.createElement("ul")
+
+        let punktEn = document.createElement("li")
+        punktEn.innerHTML = "Punkt en";
+        punktEn.className = "gul";
+        liste.appendChild(punktEn)
+
+        let punktTo = document.createElement("li")
+        punktTo.innerHTML = "Punkt to";
+        punktTo.className = "svart";
+        liste.appendChild(punktTo)
+
+        let punktTre = document.createElement("li")
+        punktTre.innerHTML = "Punkt tre";
+        punktTre.className = "gul";
+        liste.appendChild(punktTre)
+
+        let punktFire = document.createElement("li")
+        punktFire.innerHTML = "Punkt fire";
+        punktFire.className = "svart";
+        liste.appendChild(punktFire)
+
+        document.body.appendChild(liste)
+
+        //Oppgave 23
+        let listen = document.createElement("ol")
+
+        for (let i = 0; i < 12; i++) {
+            let punkt = document.createElement("li");
+            punkt.innerHTML = "Et punkt";
+            if (i % 2) {
+                punkt.className = "gul";
+            } else {
+                punkt.className = "svart";
+            }
+            listen.appendChild(punkt)
+        }
+
+        document.body.appendChild(listen)
+
+        //Oppgave 24
+
+        function lagListe(antallPunkter) {
+            let listen = document.createElement("ol")
+
+            for (let i = 0; i < antallPunkter; i++) {
+                let punkt = document.createElement("li");
+                punkt.innerHTML = "Et punkt";
+                if (i % 2) {
+                    punkt.className = "gul";
+                } else {
+                    punkt.className = "svart";
+                }
+                listen.appendChild(punkt)
+            }
+
+            document.body.appendChild(listen)
+        }
+
+        lagListe(15)
+
+        //Oppgave 25
+
+        function lagTabell(kolonner, rader) {
+            let tabell = document.createElement("table")
+
+            for (let i = 0; i < rader; i++) {
+                let rad = document.createElement("tr");
+
+                for (let j = 0; j < kolonner; j++) {
+                    let kolonne = document.createElement("td");
+                    kolonne.innerHTML = "Lorem";
+                    rad.appendChild(kolonne)
+                }
+
+                tabell.appendChild(rad)
+
+            }
+            document.body.appendChild(tabell)
+        }
+
+        lagTabell(32, 7)
+
+        //Oppgave 26 
+
+        function lagRutenett(x, y) {
+            let ramme = document.createElement("div")
+            ramme.id="enRamme"
+            ramme.style.width = "500px";
+            ramme.style.height = "500px";
+            ramme.style.display = "grid";
+            ramme.style.gridTemplateRows = "repeat(" + x + ", 1fr)";
+            ramme.style.gridTemplateColumns = "repeat(" + y + ", 1fr)";
+
+
+            for (let i = 0; i < (x*y); i++) {
+                let div = document.createElement("div");
+                
+                div.dataset.nummer = i + 1;
+                
+                if (i % 2) {
+                    div.style.backgroundColor = "white";
+                    div.style.color = "black"
+                } else {
+                    div.style.backgroundColor = "black";
+                    div.style.color = "white";
+                }
+                
+                ramme.appendChild(div)
+
+            
+            }
+
+            document.body.appendChild(ramme)
+            
+        }
+
+        lagRutenett(11,11)
+
+        
+
+        setTimeout(function () {
+            let diver = document.querySelectorAll("#enRamme > div");
+            for (let x = 0; x < diver.length; x++) {
+                diver[x].innerHTML = diver[x].dataset.nummer;
+            }
+        }, 
+        300)
+
+    </script>
+
+</body>
+
+</html>

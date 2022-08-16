@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgåver Informasjonsteknologi 1</title>
+    <style></style>
+</head>
+<body>
+    <header><h1>Oppgåver kap 3D</h1></header>
+
+    <section id="oppgaver">
+        <button id="oppg1">Oppgåve 4</button>
+        <button id="oppg2">Oppgåve 5</button>
+        <button id="oppg6">Oppgåve 6</button>
+    </section>
+
+    <article id="utskrift">
+
+    </article>
+
+    
+    <script>
+        //Deklarerer variablane eg skal nytte
+        let parUtskrift = document.querySelector("#utskrift");
+        let btnOppg1 = document.querySelector("#oppg1");
+        let btnOppg2 = document.querySelector("#oppg2");
+        let bntOppg6 = document.querySelector("#oppg3");
+
+        //Legg til lytterar som  "høyrer" etter om nokon klikkar på knappane
+        btnOppg1.addEventListener("click", oppgave4);
+        btnOppg2.addEventListener("click", oppgave5);
+        btnOppg2.addEventListener("click", oppgave6);
+
+        //Funksjonar for dei ulike oppgåvene.
+        function oppgave4() {
+            function siHeiTil(navn) {
+                utskrift.innerHTML += "Hei " + navn + "<br>"
+            }
+            siHeiTil("Trond");
+            siHeiTil("Fjottolf");
+            siHeiTil("Dagny");
+        }
+
+
+        function oppgave5() {
+            let skrivInnTall = document.createElement("input");
+            skrivInnTall.type = "text";
+
+            utskrift.appendChild(skrivInnTall);
+            skrivInnTall.addEventListener("keyup", kvadrat)
+            
+            function kvadrat(a) {
+                a = Number(skrivInnTall.value);
+                utskrift.innerHTML = a * a
+            }
+            
+        }
+
+        function oppgave6() {
+            let skrivInnTall = document.createElement("input");
+            skrivInnTall.type = "text";
+
+            utskrift.appendChild(skrivInnTall);
+            skrivInnTall.addEventListener("keyup", kvadrat)
+            
+            function kvadrat(a) {
+                a = Number(skrivInnTall.value);
+                utskrift.innerHTML = a * a
+            }
+            
+        }
+   
+
+    </script>
+
+</body>
+</html>

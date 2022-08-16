@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Eg vil først illustrere klassar og metodar, for betre å forstå kva objekta i DOM-modellen eigentleg gjer.
+
+        let enPerson = {navn: "Trond", alder: 37}
+
+        class Person {
+            constructor(parFornavn, parEtternavn, parFodt) {
+                this.fornavn = parFornavn;
+                this.etternavn = parEtternavn;
+                this.fodt = parFodt;
+            }
+            siHei() {
+                console.log("Hei, eg heiter " + this.fornavn)
+            }
+        }
+
+
+    //     class Dokument {
+    //         constructor(htmldokumentet) {
+    //             //this.body = htmldokumentet, men bare det som er innnenfor body.Dokument
+    //             //this.head = htmldokumentet, men bare det som er innenfor head.
+    //         }
+    //         querySelector(detEnLeterEtter) {
+    //             //Kode for å finne detEnLeterEtter.
+    //             //detEnLeterEtter kan være ider, tags eller classer
+    //             //returnerer det vi ser etter.
+    //         }
+    //         getElementById(id) {
+    //             //kode for å finne en gitt ID
+    //             //returnerer elementet
+    //         }
+    //         getElementsByClassName(klasse) {
+    //             //Returnerer et array med alle elementer som har en gitt klasse.
+    //         }
+
+    //     }
+
+    //     window.prompt("Si noe")
+
+    //    class Vindu
+
+        //event
+
+
+    </script>
+</head>
+<body>
+    
+   
+    <p id="avsnitt">
+        <h1></h1>
+    </p>
+
+    <img id="bilde">
+
+
+    <script>
+        let avsnitt = document.querySelector("#avsnitt");
+        let bilde = document.querySelector("#bilde")
+
+        avsnitt.innerHTML = "En liten tekst";
+
+        bilde.src = "https://media.wwf.no/assets/article_images/Dyr/_1600x1067_crop_center-center_none/Tapir_WW292175_stor.jpg";
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

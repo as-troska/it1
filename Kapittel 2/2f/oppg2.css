@@ -1,0 +1,15 @@
+#konteiner {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    grid-template-columns: repeat(8, 1fr); /* Merk at fr ikkje gjer noko, med mindre width og height er satt */
+    grid-template-rows: repeat(8, 1fr);
+    border: black 1px solid;
+}
+
+#konteiner :nth-child(odd) {
+    background-color: black;
+}
+
+

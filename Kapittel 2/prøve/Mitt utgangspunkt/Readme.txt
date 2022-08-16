@@ -1,0 +1,1 @@
+Eit kjapt design lagd for replisering av elevane på prøven.

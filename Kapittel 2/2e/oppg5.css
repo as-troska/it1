@@ -1,0 +1,13 @@
+#meisterboks {
+    display: flex;
+    flex-direction: row;
+    background-color: lavender;
+    flex-wrap: wrap; /* Eg har med denne, fordi eg ikkje likar alt for smale boksar. Ikkje heilt svar på oppgåva mao. */
+}
+
+.boks {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-basis: 250px;
+    flex-grow: 1;
+    
+}

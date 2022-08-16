@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#overskrift {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    background-color: brown;
+    padding: 0;
+    position: sticky;
+    top: 0; 
+}
+
+#innhald {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    background-color: burlywood;
+    padding: 0;
+}
+
+p {
+    margin-top: 0; /* Fjerner mellomrommet mellom dei to divane */
+}
+
+#meny {
+    font-size: 0.5em;
+    width: 100%;
+}
+
+#meny ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#meny li {
+    flex-grow: 1;
+    background-color: indianred;
+    text-align: center;
+}
+
+#meny a:hover{
+    background-color: lavenderblush;
+    color: lightslategrey;}
+
+#meny a {
+    display: inline-block;
+    background-color: indianred;    
+    padding: 25px;
+    flex-grow: 1;
+    text-decoration: none;
+    color:ivory;
+}
+

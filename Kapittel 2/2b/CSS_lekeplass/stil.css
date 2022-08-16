@@ -1,0 +1,70 @@
+.sitat {
+    font-style: italic;
+}
+
+#overskrift {
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'Meddon', cursive;    
+    text-align: center;
+    background-color: #00AFB9;
+    
+    padding: 0px;
+    border-radius: 5px;
+
+}
+
+#reklame {
+    font-family: monospace;
+    background-color: #FED9B7;
+    font-size: 1.4em;
+    margin: 10px auto;
+    opacity: 0.8;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+
+}
+
+#reklame a {
+    text-decoration: none;
+}
+
+#artikkel {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #FDFCDC ;
+    padding: 10px;
+    color: #0081A7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+p {
+
+}
+
+h2 {
+
+}
+
+ h4 {
+    /* font-size: 4em; */
+    font-size: 2em;
+    color: #FED9B7;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ img {
+     width: 95%;
+     
+
+ }
+
+ body {
+     background-color: #0081A7;
+ }
